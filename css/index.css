@@ -169,11 +169,16 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 100px;
 }
 nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.816);
   margin-bottom: 1%;
 }
 nav h1 {
@@ -185,6 +190,7 @@ nav h1 {
 nav ul {
   display: flex;
   width: 22%;
+  margin-bottom: 1%;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
