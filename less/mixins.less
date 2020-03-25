@@ -1,1 +1,26 @@
 // Mixins Here
+
+//button
+.flexcenterwrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mobileWidth{
+    @media @phone{
+        width: 100%;
+      }
+}
+.signupButton(@radius, @bgcolor, @textcolor){
+    border-radius: @radius;
+    background-color: @bgcolor;
+    color: @textcolor;
+    padding: 2% 1%;
+    font-size: 2rem;
+    width: 30%;
+    text-align: center;
+    @media @phone{
+        width: 100%;
+        padding: 5% 0;
+      }
+}
